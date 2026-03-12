@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grant Application-Brewers Community Foundation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header class="main-header">
+    <nav class="navbar">
+    <div class="nav-logo">
+        <img src="images\bcf-logo-22-.png.png" alt="BCF Logo"
+    </div>
+    <ul class="nav-links">
+
+        <li><a href=story.html>BCF Impact</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="grant-form.html">Apply For Grant</a></li>
+    </ul>
+    </nav>
+   </header> 
+    <div class="container">
+        <header>
+            <h1>Grant Application Form</h1>
+            <p id="description">Fueling community progress through strategic partnerships.</p>
+        </header>
+        <form id="grant-form" action="#" method="POST" enctype="multipart/form-data"></form>
+        <fieldset>
+            <legend>Organization Information</legend>
+            <label for="org-name">Name of Organization *</label>
+            <input type="text" id="org-name" name="org-name" required>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Grant Details</legend>
+
+                <label for="grant-date">Submission Date*</label>
+                <input type="date" id="grant-date" name="grant-date" required>
+
+                <label for="grant-category">Focus Area (Category) *</label>
+                <select id="grant-category" name="grant-category" required>
+                    <option value="" disabled selected>Select a category...</option>
+                    <option value="community">Community Outreach</option>
+                    <option value="youth">Youth Development</option>
+                    <option value="health">Health & Wellness</option>
+                </select>
+
+                </legend>
+            </fieldset>
+            <fieldset>
+                <label for="amount">Requested Amount ($) *</label>
+                <input type="number" id="amount" name="amount" min="1" required>
+                <label for="summary">Impact Description (Max 500 words)*</label>
+                <textarea id="summary" name="summary" rows="5" required></textarea>
+                   
+                    <fieldset>
+                        <legend>Community Impact Media</legend>
+                        <label  for="impact-media">Upload Photos or Video of your Project *</label>
+                        <input type="file"
+                        id="impact-media"
+                        name="impact-media"
+                        accept="image/*video/*"
+                        multiple
+                        required>
+                        <p class="hint">Accepted formats: JPG, PNG, MP4, MOV. Max size: 25MB per file.</p>
+
+                    </fieldset>
+        <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+    </div>
+    //Automatically sets the date field to today
+<script>
+    document.getElementById('grant-date').valueAsDate = new Date ();
+</script>
+    </body
+
+    </div>
+    
+</body>
+</html>
